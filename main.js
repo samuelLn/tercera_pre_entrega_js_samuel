@@ -7,4 +7,4 @@ import { saludoInicial} from './src/app.js'
 saludoInicial();
 //saludoInicialDos();
 
-console.log("hola main");
+
