@@ -6,3 +6,5 @@ import { saludoInicial} from './src/app.js'
 //import { saludoInicialDos} from './src/appCopy.js'
 saludoInicial();
 //saludoInicialDos();
+
+console.log("hola main");
