@@ -7,14 +7,18 @@ import tareasManager from "./managers/tareas.manager";
 
 
 // importa alias
-export function saludoInicial() {
+export function iniciaApp() { // saludoInicial iniciaApp
     // Ejecutamos aplicacion 
     //console.log(htmlElements.tareaContenedor);
+   
     console.log("Ejecutamos aplicacion desde apps");
+    
     // ejecuta agregar tarea
     htmlElements.formTarea.onsubmit = (event) => {
-        // con este detenemos la recarga del sitio
+        
+        // con este detenemos la recarga del sitio que se genera por defecto enb el boton submint
         event.preventDefault();
+        
         //funcion agregar tarea
         tareasManager.agregarTareas();
     }

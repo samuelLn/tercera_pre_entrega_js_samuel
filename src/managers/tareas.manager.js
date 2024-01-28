@@ -20,7 +20,10 @@ tareas.forEach(tarea => {
     // por cada tarea crea un div con la siguente clases
     let tarjeta = document.createElement("div");
     tarjeta.className = "d-flex mt-3 justify-content-between align-items-center border border-2 rounded-2 p-3";
-    tarjeta.innerHTML = `<p class="${tarea.realizado ? "text-decoration-line-through" : "aling-self-end"}">${tarea.data}</p>`; // agrega la data con backstick
+    tarjeta.innerHTML = `<p class="${tarea.realizado ? "text-decoration-line-through" : "aling-self-end"}">${tarea.data}</p>
+                         <p class="${tarea.realizado ? "text-decoration-line-through" : "aling-self-end"}">${tarea.data2}</p>
+                         <p class="${tarea.realizado ? "text-decoration-line-through" : "aling-self-end"}">${tarea.data3}</p>
+                         `; // data agrega la data con backstick
     // conten botones
     let btnContenedor = document.createElement("div");
     
@@ -56,7 +59,8 @@ tareas.forEach(tarea => {
 const agregarTareas = () => {
 //event.preventDefault();
 // obtiene el valor del input rellena esos argumentos
-let tareaNueva = crearTarea(htmlElements.inputTarea.value);
+let tareaNueva = crearTarea(htmlElements.inputTarea.value, htmlElements.inputTareaDos.value, htmlElements.inputTareaTres.value); // aqui se vana agregando los nuevos datos
+
 tareas.push(tareaNueva);
 localStorage.setItem("tareas", JSON.stringify(tareas)); // agreagmos a local storage un JSON
 console.log(tareas);

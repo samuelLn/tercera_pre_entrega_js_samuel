@@ -51,3 +51,105 @@ export{app}*/
      
 
     </div>
+
+
+
+
+
+
+
+    // sentecias practicas localStorage 
+//localStorage.setItem("mensaje","Hola mudo")
+
+//let mensaje = localStorage.getItem("mensaje");
+//console.log(mensaje);
+//console.log(typeof mensaje);
+//console.log(localStorage);
+
+//localStorage.setItem("edad",40);
+//localStorage.removeItem("edad");
+//localStorage.clear();
+
+
+//let itemsCarro = [
+
+//{ 
+/*nombre: "Remera",
+precio: 200
+},
+{ 
+    nombre: "Remera",
+    precio: 200
+    },
+    { 
+        nombre: "Remera",
+        precio: 200
+        },   
+
+];
+
+
+//localStorage.setItem("carrito", itemsCarro);
+
+localStorage.setItem("carritoStingify", JSON.stringify(itemsCarro ));
+
+let carrito =localStorage.getItem("carritoStingify");
+console.log(carrito);
+
+let carritoJS = JSON.parse(localStorage.getItem("carritoStingify"));
+
+console.log(carritoJS);*/
+
+
+
+GRAMAJE
+Patologia
+
+
+
+
+html
+<form id="formTareas" class="d-flex" action="">
+            <input id="inputTarea" class="form-control" type="text">
+            <input id="inputTareaDos" class="form-control" type="text">
+            <input  class="ms-3 btn btn-primary" type="submit" value="Agregar">
+ </form>
+
+
+JS
+
+/ obtine los elementos html para las entradas de datos
+let formTarea = document.querySelector("#formTareas");
+let inputTarea = document.querySelector("#inputTarea");
+let inputTareaDos = document.querySelector("#inputTareaDos"); // agregue un input adicinal
+let tareaContenedor = document.querySelector("#tareasContenedor");
+
+
+//MODELO DE TAREA
+const crearTarea = (texto, texto2) => { // agregue un input adicinal
+let nuevaTarea = {
+    id:Date.now().toString(36), // genera un id remdon
+    data:texto, // trae el dato del input
+    data2:texto2, // trae el dato del input dos
+    realizado: false // estado de la tarea sin realizar con booleno
+}
+return nuevaTarea;
+}
+
+
+//ARRA TAREAS VACIAS
+Let tarea = []
+
+
+
+
+// agregar tarea
+const agregarTareas = () => {
+//event.preventDefault();
+// obtiene el valor del input rellena esos argumentos
+let tareaNueva = crearTarea(inputTarea.value);
+let tareaNueva = crearTarea(htmlElements.inputTarea.value, htmlElements.inputTareaDos.value ); // aqui se vana agregando los nuevos datos
+tareas.push(tareaNueva);
+console.log(tareas);
+
+}
