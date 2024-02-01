@@ -153,3 +153,48 @@ tareas.push(tareaNueva);
 console.log(tareas);
 
 }
+
+
+
+
+
+
+// CODIGO BOTON SEPARADO elminiar
+//let btnEliminar = document.createElement("button");
+    //btnEliminar.innerText = "Eliminar"; // agregamos texto al btn eliminAR
+    //btnEliminar.className = "bnt btn-danger ms-2"; // aGREGAMOS LA CLASE
+
+// CODIGO BOTON SEPARADO realizado
+//let btnRealizado = document.createElement("button");
+    //btnRealizado.innerText = "Realizado"; // agregamos texto al btn realizado
+    //btnRealizado.className = "bnt btn-success ms-2"; // aGREGAMOS LA CLASE
+    // agregar evento realizado    
+
+
+
+
+
+
+
+
+    
+//===========Captura los valores de las tarjetas ================================================+
+/*const obtenIdInputEdit1 = document.getElementById("dataUno");
+const valorDatoUno = obtenIdInputEdit1.value;
+tareas[indexEditActulizar].data = valorDatoUno;
+
+
+const obtenIdInputEdit2 = document.getElementById("dataDos");
+const valorDatoDos = obtenIdInputEdit2.value;
+tareas[indexEditActulizar].data2 = valorDatoDos;
+
+const obtenIdInputEdit3 = document.getElementById("dataTres");
+const valorDatoTres = obtenIdInputEdit3.value;
+tareas[indexEditActulizar].data3 = valorDatoTres;
+
+//comprueba los datos impresos por console log
+ console.log(valorDatoUno+" "+ valorDatoDos + " " + valorDatoTres);
+
+//tareas[indexEdit].data = valorInput;
+ //tareas[indexEdit].data = "otro";*/
+//=============================================================+

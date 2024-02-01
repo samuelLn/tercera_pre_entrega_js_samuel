@@ -21,9 +21,18 @@ export function iniciaApp() { // saludoInicial iniciaApp
         
         //funcion agregar tarea
         tareasManager.agregarTareas();
+
+
+
     }
    
-   tareasManager.mostrarTareas();
+
+  // Evento que identifica el value del select   
+   tareasManager.mostrarTareas(tareasManager.tareas);
+  htmlElements.filtrot.onchange = () => {
+    console.log(htmlElements.filtrot.value);
+    tareasManager.filtrarTareas(htmlElements.filtrot.value);
+  }
 
 }
 

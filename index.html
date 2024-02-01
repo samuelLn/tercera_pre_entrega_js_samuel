@@ -15,18 +15,32 @@
     <div class="container">
       <div class="row">
        <div class="tex-center">
-        <h1>Tercera pre-entrega</h1>
+        <h1>Sistema calendario ciclos medicamentos</h1>
       </div>
       </div>
 
       <div class="row">
         <div class="col">
-          <form id="formTareas" class="d-flex" action="">
+          <form id="formTareas" class="d-flex flex-column" action="">
             <input id="inputTarea" class="form-control" type="text">
             <input id="inputTareaDos" class="form-control" type="text">
             <input id="inputTareatres" class="form-control" type="text">
             <input  class="ms-3 btn btn-primary" type="submit" value="Agregar">
+
+            
+
+
           </form>
+
+        <select class="form-select my-2" name="" id="filtroT">
+          <option value="Todas">Todas</option>
+          <option value="Realizadas">Realizadas</option>
+          <option value="noRealizadas">No ealizadas</option>
+
+        </select>
+
+
+
         </div>
 
       </div>
@@ -34,9 +48,8 @@
      <div id="tareasContenedor">
 
      </div>
-
    
-
+   
 
     </div>
 
@@ -49,7 +62,12 @@
     
   
    
+<style>
 
+  .oculto{ display: none;}
+  .activo{ display: block;}
+
+</style>
 
    
 

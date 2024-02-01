@@ -6,10 +6,15 @@ let inputTareaDos = document.querySelector("#inputTareaDos"); // agregue un inpu
 let inputTareaTres = document.querySelector("#inputTareatres"); // agregue un input adicinal
 let tareaContenedor = document.querySelector("#tareasContenedor");
 
+// trae id select
+let filtrot = document.querySelector("#filtroT");
+
+// exporta elemento id html
 export default {
     formTarea,
     inputTarea,
     inputTareaDos, // agregue un input adicinal
     inputTareaTres,
-    tareaContenedor
+    tareaContenedor,
+    filtrot
 }

@@ -5,7 +5,8 @@ let nuevaTarea = {
     data:texto, // trae el dato del input
     data2:texto2, // trae el dato del input dos
     data3:texto3, // trae el dato del input tres
-    realizado: false // estado de la tarea sin realizar con booleno
+    realizado: false, // estado de la tarea sin realizar con booleno
+    editado: false // estado editado sin editar
 }
 return nuevaTarea;
 }
