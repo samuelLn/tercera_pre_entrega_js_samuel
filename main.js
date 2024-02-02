@@ -6,7 +6,3 @@ import { iniciaApp } from './src/app.js'
 //import { saludoInicialDos} from './src/appCopy.js'
 iniciaApp();
 //saludoInicialDos();
-
-
-
-
