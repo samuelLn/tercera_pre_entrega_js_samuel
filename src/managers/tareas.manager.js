@@ -256,6 +256,23 @@ let inputEditarUnovalorActual1 = obtenInputActivosedit.childNodes[0].value = dat
 let inputEditarUnovalorActual2 = obtenInputActivosedit.childNodes[1].value = datoUnputDos;
 let inputEditarUnovalorActual3 = obtenInputActivosedit.childNodes[2].value = datoUnputTres;
 
+
+let inputAactivoOculatar1 = obtenIdTarjetaActual.childNodes[1];
+let inputAactivoOculatar2 = obtenIdTarjetaActual.childNodes[3];
+let inputAactivoOculatar3 = obtenIdTarjetaActual.childNodes[5];
+
+
+// aoculta los input a editar
+let arrayInputOcultar = [inputAactivoOculatar1, inputAactivoOculatar2, inputAactivoOculatar3];
+
+arrayInputOcultar.forEach(
+  Element => { 
+    Element.style.display = "none";  
+  }
+);
+
+
+
 }
 
 
