@@ -235,12 +235,26 @@ obtenBotonEditarActual.classList.add("oculto");
 if (tareas[indexEdit].id === tareas[indexEdit].id) {
 
 
-  
+  // cotiene el grupo de input activo
+  let obtenInputActivosedit = document.querySelector('.edit.activo');
+  obtenInputActivosedit.style.opacity =".5"; 
 
 
+/*let inputEditarUnovalorActual1 = obtenInputActivosedit.childNodes[0].value = "Editar";
+let inputEditarUnovalorActual2 = obtenInputActivosedit.childNodes[1].value = "Editar";
+let inputEditarUnovalorActual3 = obtenInputActivosedit.childNodes[2].value = "Editar";*/
 
 
-  
+  // ontiene lo valores actules de los input 
+  let datoUnputuno = obtenIdTarjetaActual.childNodes[1].childNodes[1].textContent;
+  let datoUnputDos = obtenIdTarjetaActual.childNodes[3].childNodes[1].textContent;
+  let datoUnputTres = obtenIdTarjetaActual.childNodes[5].childNodes[1].textContent;
+  console.log ("inicia tarea edit " + datoUnputuno + " " + datoUnputDos + " " + datoUnputTres);
+
+//imnprime el valor de los input actules en los input actualesgit
+let inputEditarUnovalorActual1 = obtenInputActivosedit.childNodes[0].value = datoUnputuno;
+let inputEditarUnovalorActual2 = obtenInputActivosedit.childNodes[1].value = datoUnputDos;
+let inputEditarUnovalorActual3 = obtenInputActivosedit.childNodes[2].value = datoUnputTres;
 
 }
 
